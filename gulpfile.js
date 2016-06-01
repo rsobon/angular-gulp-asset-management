@@ -22,8 +22,15 @@ gulp.task('default', ['installFonts'], function () {
         .pipe(angularFilesort());
     var appStreamCSS = gulp.src(['./app/src/app.css']);
     
-    // run this action if gulp is run with --production argument
-    if (argv.production) {
+    // run this action if gulp is run with --dev argument
+    if (argv.dev) {
+        bowerStreamJS = bowerStreamJS
+            .pipe(gulp.dest(vendorDirectory));
+        bowerStreamCSS = bowerStreamCSS
+            .pipe(gulp.dest(vendorDirectory));
+    }
+    // default gulp action
+    else {
         // Concatenate and minify bower scripts
         bowerStreamJS = bowerStreamJS
             .pipe(concat('vendors.js'))
@@ -43,18 +50,10 @@ gulp.task('default', ['installFonts'], function () {
             .pipe(gulp.dest(buildDirectory));
 
         // Concatenate and minify app css
-        appStreamCSS = gulp.src('app/*.css')
+        appStreamCSS = appStreamCSS
             .pipe(concat('app.css'))
             .pipe(cleanCss())
             .pipe(gulp.dest(buildDirectory));
-
-    }
-    // default gulp action
-    else {
-        bowerStreamJS = bowerStreamJS
-            .pipe(gulp.dest(vendorDirectory));
-        bowerStreamCSS = bowerStreamCSS
-            .pipe(gulp.dest(vendorDirectory));
     }
 
     // choose source index.html to inject
@@ -75,9 +74,9 @@ gulp.task('default', ['installFonts'], function () {
         .pipe(
             inject(appStreamCSS, {relative: true})
         )
-        // create index.min.html if run with --production argument
+        // create index.dev.html if run with --dev argument
         .pipe(
-            gulpif(argv.production, rename('index.min.html'))
+            gulpif(argv.dev, rename('index.dev.html'))
         )
         // save the file
         .pipe(

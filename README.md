@@ -10,16 +10,16 @@ $ cd angular-gulp-asset-management
 $ npm install
 ```
 
-### Inject assets into index.html:
+### Combine, minify and inject assets into index.html:
 
 ```bash
 $ gulp
 ```
 
-### Combine, minify and inject assets into index.min.html:
+### Inject assets into index.dev.html:
 
 ```bash
-$ gulp --production
+$ gulp --dev
 ```
 
 ### Run HTTP Server:
@@ -29,3 +29,5 @@ $ npm start
 ```
 
 You can access the app on http://localhost:8000
+
+You can access the development version of index on http://localhost:8000/index.dev.html
