@@ -11,13 +11,13 @@ $ cd angular-gulp-asset-management
 $ npm install
 ```
 
-### Combine, minify and inject assets into index.html:
+### Inject assets into index.html:
 
 ```bash
 $ gulp
 ```
 
-### Inject assets into index.prod.html:
+### Combine, minify and inject assets index.prod.html:
 
 ```bash
 $ gulp --production
