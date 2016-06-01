@@ -21,3 +21,11 @@ $ gulp
 ```bash
 $ gulp --production
 ```
+
+### Run HTTP Server:
+
+```bash
+$ npm start
+```
+
+You can access the app on http://localhost:8000
