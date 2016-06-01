@@ -1,0 +1,43 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-cookies": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "restangular": "~1.5.1",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "~0.14.3",
+    "angular-ui-select": "~0.13.2",
+    "angular-bootstrap-show-errors": "~2.3.0",
+    "ngtoast": "~1.5.6",
+    "angular-ui-tree": "^2.10",
+    "angular-loading-bar": "~0.8.0",
+    "angular-mocks": "~1.4.0",
+    "moment": "~2.10.6"
+  },
+  "overrides": {
+    "ngtoast": {
+      "main": [
+        "dist/ngToast.js",
+        "dist/ngToast.css",
+        "dist/ngToast-animations.css"
+      ]
+    },
+    "jquery": {
+      "ignore": true
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "fonts/*"
+      ]
+    }
+  }
+}
