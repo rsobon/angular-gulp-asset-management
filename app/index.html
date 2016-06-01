@@ -8,11 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- inject:css -->
-  <link rel="stylesheet" href="assets/build/app.css">
+  <link rel="stylesheet" href="src/app.css">
   <!-- endinject -->
 
   <!-- bower:css -->
-  <link rel="stylesheet" href="assets/build/vendors.css">
+  <link rel="stylesheet" href="assets/vendors/select.css">
+  <link rel="stylesheet" href="assets/vendors/ngToast.css">
+  <link rel="stylesheet" href="assets/vendors/ngToast-animations.css">
+  <link rel="stylesheet" href="assets/vendors/angular-ui-tree.css">
+  <link rel="stylesheet" href="assets/vendors/loading-bar.css">
+  <link rel="stylesheet" href="assets/vendors/bootstrap.css">
   <!-- endinject -->
 </head>
 <body>
@@ -26,11 +31,30 @@
   <div>Angular seed app: v<span app-version></span></div>
 
   <!-- bower:js -->
-  <script src="assets/build/vendors.js"></script>
+  <script src="assets/vendors/angular.js"></script>
+  <script src="assets/vendors/angular-route.js"></script>
+  <script src="assets/vendors/angular-cookies.js"></script>
+  <script src="assets/vendors/angular-sanitize.js"></script>
+  <script src="assets/vendors/angular-animate.js"></script>
+  <script src="assets/vendors/lodash.js"></script>
+  <script src="assets/vendors/ui-bootstrap-tpls.js"></script>
+  <script src="assets/vendors/select.js"></script>
+  <script src="assets/vendors/showErrors.js"></script>
+  <script src="assets/vendors/ngToast.js"></script>
+  <script src="assets/vendors/angular-ui-tree.js"></script>
+  <script src="assets/vendors/loading-bar.js"></script>
+  <script src="assets/vendors/angular-mocks.js"></script>
+  <script src="assets/vendors/moment.js"></script>
+  <script src="assets/vendors/restangular.js"></script>
   <!-- endinject -->
 
   <!-- inject:js -->
-  <script src="assets/build/app.js"></script>
+  <script src="src/components/version/version.js"></script>
+  <script src="src/components/version/version-directive.js"></script>
+  <script src="src/components/version/interpolate-filter.js"></script>
+  <script src="src/view1/view1.js"></script>
+  <script src="src/view2/view2.js"></script>
+  <script src="src/app.js"></script>
   <!-- endinject -->
 
 </body>

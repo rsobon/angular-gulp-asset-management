@@ -2,6 +2,7 @@
 
 This is an example app based on [angular-seed](https://github.com/angular/angular-seed) with clean front-end asset managment using Gulp.
 
+
 ### Installation
 
 ```bash
@@ -16,10 +17,10 @@ $ npm install
 $ gulp
 ```
 
-### Inject assets into index.dev.html:
+### Inject assets into index.prod.html:
 
 ```bash
-$ gulp --dev
+$ gulp --production
 ```
 
 ### Run HTTP Server:
@@ -30,4 +31,4 @@ $ npm start
 
 You can access the app on http://localhost:8000
 
-You can access the development version of index on http://localhost:8000/index.dev.html
+You can access the production version of index on http://localhost:8000/index.prod.html
