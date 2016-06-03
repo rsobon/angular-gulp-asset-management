@@ -4,7 +4,7 @@ This is an example app based on [angular-seed](https://github.com/angular/angula
 
 I wanted to have two HTML layout files - one for development with separate assets and one for production with concatenated, minified assets.
 
-Also I don't checkout `bower_components` into version control, so I need to build sources into another directory `app/assets/build`. That's where Gulp comes in handy.
+Also I don't check `bower_components` into version control, so I need to build sources into another directory `app/assets/build`. That's where Gulp comes in handy.
 
 Used resources
 * gulp, bower
