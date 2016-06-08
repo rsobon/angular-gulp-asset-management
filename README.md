@@ -34,7 +34,7 @@ $ npm install
 $ gulp
 ```
 
-### Combine, minify and inject assets index.prod.html:
+### Combine, minify and inject assets into index.prod.html:
 
 ```bash
 $ gulp --production
