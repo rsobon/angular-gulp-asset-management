@@ -2,6 +2,8 @@
 
 This is an example app based on [angular-seed](https://github.com/angular/angular-seed) with clean front-end asset management using Gulp.
 
+Code is explained in this article: https://excodus.com/en/blog/post/managing-development-and-production-assets-gulp
+
 I wanted to have two HTML layout files - one for development with separate assets and one for production with concatenated, minified assets.
 
 Also I don't check `bower_components` into version control, so I need to build sources into another directory `app/assets/build`. That's where Gulp comes in handy.
